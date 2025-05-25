@@ -1,11 +1,8 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/users.module.scss";
-import Users from "../users";
 import MainContainer from "../../components/MainContainer";
 
 export default function User({ user }) {
-  const { query } = useRouter();
-
   return (
     <MainContainer title={user.name} className={styles.user}>
       <h1>Айди - {user.id}</h1>
